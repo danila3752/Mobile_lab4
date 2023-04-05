@@ -40,6 +40,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         FAB.setOnClickListener {
+            addObject(Uri.parse("TocoToucan.sfb"))
+        }
+
+        FAB2.setOnClickListener{
             addObject(Uri.parse("model.sfb"))
         }
 
@@ -61,9 +65,14 @@ class MainActivity : AppCompatActivity() {
         if (b) {
             FAB.isEnabled = true
             FAB.visibility = View.VISIBLE
+            FAB2.isEnabled = true
+            FAB2.visibility = View.VISIBLE
+
         } else {
             FAB.isEnabled = false
             FAB.visibility = View.GONE
+            FAB2.isEnabled = false
+            FAB2.visibility = View.GONE
         }
     }
 
